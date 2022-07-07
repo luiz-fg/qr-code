@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <script src="./assets/js/app.js" defer></script>
+
+  <title>qr-code Generator</title>
+</head>
+<body>
+  <div class="container">
+  <input type="text" id="text"   placeholder="Enter url" class="input">
+  <div class="buttons">
+    <button type="button" id="btn" onclick="generateQR()">Gerar QR</button>
+    
+    <div id="down-off">
+      <img id="img-down" src="./assets/img/seta-50.png" alt="" onclick="downloadImage()">
+    </div>
+  </div>
+  <div id="qr-image">
+  <span class="error"></span><br/>
+  <img src="" id="img"/>
+  </div>
+  </div>
+</body>
+</html>
